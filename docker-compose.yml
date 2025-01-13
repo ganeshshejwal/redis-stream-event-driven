@@ -3,6 +3,9 @@ version: '3.8'
 services:
   springboot-app:
     image: redis-consumer
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: redis-consumer
     ports:
       - "8080:8080"
