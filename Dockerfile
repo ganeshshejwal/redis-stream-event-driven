@@ -1,4 +1,4 @@
-FROM openjdk:21-slim-bullseye
+FROM openjdk:23-slim-bullseye
 
 WORKDIR /app
 
