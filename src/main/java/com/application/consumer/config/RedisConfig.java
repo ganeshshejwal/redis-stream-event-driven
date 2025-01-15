@@ -16,6 +16,12 @@ import org.springframework.data.redis.stream.Subscription;
 @Configuration
 public class RedisConfig {
 
+   @Value("${spring.data.redis.host}")
+    private String host;
+    
+    @Value("${spring.data.redis.port}")
+    private int port;
+
     @Value("${brewery-data.stream.key}")
     private String streamKey;
 
